@@ -1,0 +1,82 @@
+[
+  {
+    "ContainingType": "Hackathon_TestCaseGenerator.Controllers.TestCaseController",
+    "Method": "GenerateTestCases",
+    "RelativePath": "api/TestCase/generate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Hackathon_TestCaseGenerator.Models.DTOs.GenerateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hackathon_TestCaseGenerator.Controllers.TestCaseController",
+    "Method": "GetJiraDetails",
+    "RelativePath": "api/TestCase/jira/{jiraId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jiraId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hackathon_TestCaseGenerator.Controllers.TestCaseController",
+    "Method": "GetPendingQAIssues",
+    "RelativePath": "api/TestCase/pendingqa/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hackathon_TestCaseGenerator.Controllers.TestCaseController",
+    "Method": "ReviewTestCases",
+    "RelativePath": "api/TestCase/review",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Hackathon_TestCaseGenerator.Models.DTOs.FeedbackRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hackathon_TestCaseGenerator.Controllers.TestCaseController",
+    "Method": "UploadTestCases",
+    "RelativePath": "api/TestCase/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Hackathon_TestCaseGenerator.Models.DTOs.UploadRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
