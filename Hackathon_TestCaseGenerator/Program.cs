@@ -13,7 +13,6 @@ var documentationPath = builder.Configuration["Documentation:Path"];
 var openAiKey = builder.Configuration["OpenAI:ApiKey"];
 // Register services
 builder.Services.AddSingleton(jiraConfig);
-//builder.Services.AddSingleton(new OllamaService("llama3"));
 builder.Services.AddSingleton(new OpenAIService(openAiKey));
 builder.Services.AddSingleton(new JiraService(jiraConfig));
 builder.Services.AddSingleton(new XrayUploadService(jiraConfig));
